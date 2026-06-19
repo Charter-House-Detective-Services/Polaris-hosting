@@ -1,59 +1,31 @@
-const CACHE_NAME = 'flutter-app-cache';
-const urlsToCache = [
-  '/',
-  '/index.html',
-  '/main.dart.js',
-  '/flutter.js',
-  '/manifest.json',
-  '/favicon.png',
-];
+'use strict';
 
-self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(urlsToCache);
-    })
-  );
+self.addEventListener('install', () => {
   self.skipWaiting();
 });
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames.map((cacheName) => {
-          if (cacheName !== CACHE_NAME) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
-  );
-  self.clients.claim();
-});
-
-self.addEventListener('fetch', (event) => {
-  if (event.request.method !== 'GET') {
-    return;
-  }
-
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      if (response) {
-        return response;
+    (async () => {
+      try {
+        await self.registration.unregister();
+      } catch (e) {
+        console.warn('Failed to unregister the service worker:', e);
       }
-      return fetch(event.request).then((response) => {
-        if (!response || response.status !== 200 || response.type !== 'basic') {
-          return response;
-        }
-        const responseToCache = response.clone();
-        caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, responseToCache);
+
+      try {
+        const clients = await self.clients.matchAll({
+          type: 'window',
         });
-        return response;
-      });
-    }).catch(() => {
-      return caches.match(event.request);
-    })
+        // Reload clients to ensure they are not using the old service worker.
+        clients.forEach((client) => {
+          if (client.url && 'navigate' in client) {
+            client.navigate(client.url);
+          }
+        });
+      } catch (e) {
+        console.warn('Failed to navigate some service worker clients:', e);
+      }
+    })()
   );
 });
