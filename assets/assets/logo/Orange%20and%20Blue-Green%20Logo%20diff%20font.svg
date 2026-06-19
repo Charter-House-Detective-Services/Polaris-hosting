@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499.04 113.26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #086972;
+        font-family: BankGothicBold, BankGothic;
+        font-size: 27.05px;
+      }
+
+      .cls-2 {
+        fill: #de7d27;
+      }
+
+      .cls-3 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(57.1 62.35)"><tspan x="0" y="0">cha</tspan><tspan class="cls-3" x="54.32" y="0">r</tspan><tspan x="70.9" y="0">terhouse technologies</tspan></text>
+  <g>
+    <path class="cls-2" d="m25.58,17.33C3.94,26.62-4.49,49.21,2.29,69.43c2.3,9.84,15.23,28.73,26.12,31.53,3.3.9,6.46,2.7,0-5.7-19.99-18.72-21.79-58.27-1.5-75.67,0,0,3.78-3.75-1.34-2.25Z"/>
+    <path class="cls-2" d="m30.84,39.22s6.11,8.71,5.41,18.62-5.41,15.11-5.41,15.11h4.4s4.5-7.31,4.3-15.11-1.29-11.71-4.35-18.62"/>
+    <path class="cls-2" d="m54.82,72.95s-6.11-8.71-5.41-18.62c.7-9.91,5.41-15.11,5.41-15.11h-4.4s-4.5,7.31-4.3,15.11,1.29,11.71,4.35,18.62"/>
+    <circle class="cls-2" cx="43.19" cy="57.73" r="1.64"/>
+  </g>
+</svg>
