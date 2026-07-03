@@ -117793,7 +117793,7 @@ $1(a){var s=null
 return A.iy(A.b([A.dk(B.c3,new A.aLG(a),s),A.ee(B.mr,s,new A.aLH(a),A.cO(s,s,B.aj,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s))],t.p),s,s,s,B.qU,s,s,s,s,B.qT)},
 $S:49}
 A.aLG.prototype={
-$0(){return A.aZ(this.a,!1).aaW("/",null,t.X)},
+$0(){return A.aZ(this.a,!1).aaW("/dashboard",null,t.X)},
 $S:0}
 A.aLH.prototype={
 $0(){A.aZ(this.a,!1).b3(!0)
