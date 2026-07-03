@@ -117194,7 +117194,7 @@ break
 case 2:s=5
 return A.o(new A.hR().lU(),$async$yl)
 case 5:p=t.X
-A.iU(a,"/login",p,p)
+A.iU(a,"/",p,p)
 case 3:return A.t(null,r)}})
 return A.u($async$yl,r)}}
 A.aMt.prototype={
@@ -117793,11 +117793,11 @@ $1(a){var s=null
 return A.iy(A.b([A.dk(B.c3,new A.aLG(a),s),A.ee(B.mr,s,new A.aLH(a),A.cO(s,s,B.aj,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s))],t.p),s,s,s,B.qU,s,s,s,s,B.qT)},
 $S:49}
 A.aLG.prototype={
-$0(){return A.aZ(this.a,!1).aaW("/dashboard",null,t.X)},
-$S:0}
-A.aLH.prototype={
 $0(){A.aZ(this.a,!1).b3(!0)
 return null},
+$S:0}
+A.aLH.prototype={
+$0(){return A.aZ(this.a,!1).aaW("/",null,t.X)},
 $S:0}
 A.tS.prototype={
 a0(){return new A.a5D()}}
