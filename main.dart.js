@@ -127032,10 +127032,9 @@ if(j!=null){b9=A.ck(J.j(j))
 i=b9==null?0:b9
 new A.aVh(c9,i,m).$0()
 c9.c.dc()}break
-case"trip_status_updated":case"vehicle_status_updated":c0=J.p(s,"trip_status")
+case"trip_status_updated":case"vehicle_status_updated":c0=J.p(s,d7)
 c0=c0==null?d0:J.j(c0)
-if(c0==null){c0=J.p(s,d7)
-c0=c0==null?d0:J.j(c0)}if(c0==null)c0=m.fx
+if(c0==null)c0=m.fx
 m.fx=c0
 break
 case"alert_updated":try{h=m
