@@ -130383,7 +130383,7 @@ q=[]
 try{j=a1.to
 q=j}catch(n){}for(o=J.b1(q),m=t.f;o.t();){i=o.gO(o)
 if(m.b(i)){h=J.am(i)
-g=J.c(h.h(i,"Reached"),!0)
+g=J.c(h.h(i,"reached"),!0)
 f=h.h(i,"reached_datetime")
 e=f==null?a:J.j(f)
 if(e==null)e=""
@@ -131791,7 +131791,7 @@ l=i.Hj(n.h(o,"longitude"))
 if(m!=null&&l!=null){k=n.h(o,"name")
 k=k==null?null:J.j(k)
 if(k==null)k="Waypoint"
-j=J.c(n.h(o,"Reached"),!0)
+j=J.c(n.h(o,"reached"),!0)
 n=n.h(o,h)
 n=n==null?null:J.j(n)
 if(n==null)n=""
@@ -137357,7 +137357,7 @@ b0=A.ce(f7==null?"":f7)
 f7=J.p(a9,"longitude")
 f7=f7==null?null:J.j(f7)
 b1=A.ce(f7==null?"":f7)
-if(b0!=null&&b1!=null){b2=J.c(J.p(a9,"Reached"),!0)
+if(b0!=null&&b1!=null){b2=J.c(J.p(a9,"reached"),!0)
 f7=J.p(a9,"reached_datetime")
 f8=f7==null?null:J.j(f7)
 b3=f8==null?"":f8
@@ -137575,7 +137575,7 @@ b=g
 if(b==null)b=""
 if(k.h(0,a.a2U(b))===!0){g=a.a2V(b)
 e=a.Ak(b)
-a3.$5(c,g,e,60,"Alert: "+(b.length===0?"Warning":b))}}a.v(new A.b2I(a,a2))},
+a3.$5(c,g,e,28,"Alert: "+(b.length===0?"Warning":b))}}a.v(new A.b2I(a,a2))},
 a2F(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this
 if(e.c==null)return
 k=A.a([],t.e)
@@ -138029,7 +138029,7 @@ k=k?a4:320
 c=A.z(14)
 b=A.z(12)
 a=A.b2(g,B.n,1)
-if(p)a0="  \ue05e\u5737 ALERT TRIGGERED"
+if(p)a0="   ALERT TRIGGERED"
 else if(o)a0="  GENERAL REMARK"
 else if(r)a0="  TRIP SOURCE"
 else if(q)a0="  DESTINATION"
