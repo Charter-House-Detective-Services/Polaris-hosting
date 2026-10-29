@@ -41242,7 +41242,7 @@ break A}return s},
 bZx(a,b){return a},
 bZy(a,b){return b},
 bZw(a,b){return a.b<=b.b?b:a},
-cd(){var s=B.b.t("http://polaris.charterhouse.in/polaris-api")
+cd(){var s=B.b.t("https://polaris.charterhouse.in/polaris-api")
 return B.b.da(s,"/")?B.b.a3(s,0,s.length-1):s},
 bKQ(){var s=A.cd()
 if(B.b.bf(s,"https://"))return"wss://"+B.b.c1(s,8)
